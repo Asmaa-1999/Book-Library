@@ -1,0 +1,127 @@
+*
+{
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.s1{
+    text-align: center;
+    color:  #893f6f;
+}
+.s2
+{
+    color: #893f6f;
+    padding: 1.8%;
+    /* background-color: #bd6492; */
+    
+}
+.s2 input
+{
+    padding: .5% 1%;
+}
+.s2 button
+{
+    background:  #893f6f;
+    color: white;
+    border: none;
+    border-radius: 2%;
+    padding: .5% 1%;
+    margin-left: 1%;
+    cursor: pointer;
+}
+.mesg
+{
+    color: rgb(125, 15, 15);
+    font-weight: 500;
+}
+.s3{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    padding-top: 2%;
+}
+.form-add-book
+{
+    display: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 40%;
+    padding: 2%;
+}
+.form input
+{
+    border: none;
+    border-bottom:solid #893f6f 2px;
+    padding: 2%;
+    margin-bottom:5px ;
+    border-radius: 5px;
+    background-color: transparent;
+
+}
+.btn
+{
+    margin:3% auto;
+}
+.btn button
+{
+    padding: 8px 50px;
+    border-radius: 5px;
+    border: none;
+}
+#btnAdd
+{
+    background-color:#893f6f;
+    color: white;
+    cursor: pointer;
+} 
+/* .s4{
+    width: 70%;
+    height: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+} */
+
+table{
+    /* width: 50%;
+    height: 10%;
+    text-align: center;
+    margin: auto; */
+    display: none;
+
+}
+/* table tr td{
+    border-bottom:solid rgb(137, 63, 111) 1px;
+    color: rgb(207, 39, 39);
+    font-weight: 500;
+} */
+
+.message
+{
+    margin: 2%;
+    width: 18%;
+    padding:2% ;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    z-index: 9999;
+    background-color: #991f1f;
+    border-radius: 1%;
+    text-align: center;
+    display: none;
+    color: rgb(240, 231, 231);
+
+}
