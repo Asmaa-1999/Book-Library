@@ -2,69 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Library</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <div class="s1">
+    <h1>Book Library</h1>
+  </div>
 
-    <div class="s1">
-        <h1 style="font-size: 2.5rem;">Book Library</h1>
-    </div>
-    <div class="s2">
-        <label for="num-book">How many books ? </label>
-        <input type="text" id="num-book" name="num-book" pattern="[0-9]{1,3}" required>
-        <button type="" id="btnNumber">ok</button>
-        <p class="m0 mesg"></p>
-    </div>
-    <div class="form-add-book">
-        <div class="s3">
-            <form class="form">
-                <input id="nameBook" type="text" value="" placeholder="Book Name" pattern="[a-zA-Z]{2,20}" required>
-                <span class="mesg m1"></span>
-                <input id="price" type="text" value="" placeholder="Price" pattern="[0-9]{0,3}" required>
-                <span class=" mesg m2"></span>
-                <input id="text" type="text" value="" placeholder="Author Name" pattern="[a-zA-Z]{2,20}" required>
-                <span class=" mesg m3"></span>
-                <input id="mail" type="text" value="" placeholder="Author Email" required>
-                <span class=" mesg m4"></span>
-                <div class="btn">
-                    <button type="submit" id="btnAdd">Add Books</button>
-                </div>
-            </form>
+  <div class="s2">
+    <label for="num-book">How many books?</label>
+    <input type="text" id="num-book" placeholder="e.g., 3" pattern="[0-9]{1,3}" required />
+    <button id="btnNumber">OK</button>
+    <p class="mesg m0"></p>
+  </div>
+
+  <div class="form-add-book">
+    <div class="s3">
+      <form class="form">
+        <input id="nameBook" type="text" placeholder="Book Name" pattern="[a-zA-Z0-9 ]{2,30}" required />
+        <span class="mesg m1"></span>
+
+        <input id="price" type="text" placeholder="Price" pattern="[0-9]{1,6}" required />
+        <span class="mesg m2"></span>
+
+        <input id="text" type="text" placeholder="Author Name" pattern="[a-zA-Z ]{2,30}" required />
+        <span class="mesg m3"></span>
+
+        <input id="mail" type="email" placeholder="Author Email" required />
+        <span class="mesg m4"></span>
+
+        <div class="btn">
+          <button type="submit" id="btnAdd">Add Book</button>
         </div>
-
+      </form>
     </div>
-    <div class="s4">
-        <table class="table" style="text-align: center">
-            <thead style="background-color: #bd6492;">
-                <tr style=" color:rgb(249, 246, 246);">
-                    <!-- <th>Index</th> -->
-                    <th>Book Name</th>
-                    <th>Price</th>
-                    <th>Author Name</th>
-                    <th>Author Email</th>
-                    <th>Action</th>
+  </div>
 
-                </tr>
-            </thead>
-            <tbody>
-                <!-- <tr>
-                    <td>1</td>
-                    <td>test</td>
-                    <td>25</td>
-                    <td>Asma</td>
-                    <td>as@gmail.com</td>
-                </tr> -->
-            </tbody>
-        </table>
-    </div>
-    <div class="message"></div>
+  <div class="s4">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Book Name</th>
+          <th>Price</th>
+          <th>Author Name</th>
+          <th>Author Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
 
+  <div class="message"></div>
 
-    <script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
